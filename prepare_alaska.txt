@@ -1,0 +1,14 @@
+1. Download alaska
+docker pull azshoo/alaska:1.0
+2. Run container with port to host that it may be available via http://127.0.0.1:9091
+docker run -it -p 9091:8091 --name trololo azshoo/alaska:1.0
+3. Download repo with tests
+ 
+4. Create venv
+python3 -m virtualenv alfa
+5. Source it
+source alfa/bin/activate
+6. Upload requerements
+pip install -r requirements.txt
+7. Run tests via
+py.test test/
